@@ -53,7 +53,7 @@ function getResultNumber() {
 }
 
 async function postToSlack(url, data) {
-    const response = await fetch(url, {
+    await fetch(url, {
       method: 'POST', 
       headers: {
         'Content-Type': 'application/json'
